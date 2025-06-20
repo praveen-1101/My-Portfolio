@@ -54,11 +54,11 @@ export function Navigation() {
           {/* Logo */}
           <motion.button
             onClick={scrollToTop}
-            className="flex items-center gap-2 font-bold text-lg hover:text-blue-600 transition-colors group"
+            className="flex items-center gap-2 font-bold text-lg hover:text-yellow-600 transition-colors group"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full flex items-center justify-center group-hover:shadow-lg transition-all">
+            <div className="w-8 h-8 bg-gradient-to-r from-yellow-600 to-lime-600 rounded-full flex items-center justify-center group-hover:shadow-lg transition-all">
               <User className="w-4 h-4 text-white" />
             </div>
             <span className="hidden sm:block">Praveen Kumar</span>
@@ -77,7 +77,7 @@ export function Navigation() {
                 whileHover={{ y: -2 }}
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-cyan-600 group-hover:w-full transition-all duration-300" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-600 to-lime-600 group-hover:w-full transition-all duration-300" />
               </motion.button>
             ))}
           </div>

@@ -77,10 +77,10 @@ export function AboutSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-yellow-500 to-yellow-300 bg-clip-text text-transparent drop-shadow-[0_1px_5px_rgba(234,179,8,0.5)]">
             About Me
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-8 rounded-full" />
+          <div className="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-400 mx-auto mb-8 rounded-full transition-all duration-300 group-hover:w-24 group-hover:scale-x-105" />
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
@@ -219,11 +219,11 @@ export function AboutSection() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm group hover:-translate-y-2">
-                    <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <Card className="p-6 text-center hover:shadow-yellow-400/20 hover:scale-[1.03] transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm group">
+                    <div className="w-12 h-12 bg-gradient-to-r from-yellow-600 to-amber-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md shadow-yellow-500/30 group-hover:animate-none group-hover:scale-110 transition-transform">
                       <IconComponent className="w-6 h-6 text-white" />
                     </div>
-                    <h4 className="font-semibold text-foreground mb-2 group-hover:text-blue-600 transition-colors">
+                    <h4 className="font-semibold text-foreground mb-2 group-hover:text-yellow-600 transition-colors">
                       {interest.title}
                     </h4>
                     <p className="text-sm text-muted-foreground">

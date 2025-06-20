@@ -20,7 +20,8 @@ const experiences = [
     ],
     technologies: ["Node.js", "Express.js", "MongoDB", "Payment APIs"],
     current: true,
-    color: "from-blue-600 to-cyan-600"
+    color: "from-yellow-600 to-amber-500"
+
   },
   {
     title: "Frontend Developer Intern",
@@ -36,7 +37,7 @@ const experiences = [
     ],
     technologies: ["React.js", "Redux", "TypeScript", "Tailwind CSS"],
     current: true,
-    color: "from-purple-600 to-pink-600"
+    color: "from-yellow-600 to-amber-500"
   }
 ]
 
@@ -92,10 +93,10 @@ export function ExperienceSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-yellow-400 to-amber-300 bg-clip-text text-transparent drop-shadow-[0_1px_8px_rgba(234,179,8,0.4)]">
             Professional Experience
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-8 rounded-full" />
+          <div className="w-20 h-1 bg-gradient-to-r from-yellow-500 to-amber-400 mx-auto mb-8 rounded-full" />
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Building scalable solutions and contributing to innovative projects across different domains
           </p>
@@ -126,7 +127,7 @@ export function ExperienceSection() {
                         </div>
                         <div>
                           {exp.current && (
-                            <Badge className="bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300 mb-2">
+                            <Badge className="bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300 mb-2">
                               Current Position
                             </Badge>
                           )}
@@ -136,10 +137,10 @@ export function ExperienceSection() {
                         </div>
                       </div>
                       
-                      <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-blue-600 transition-colors">
+                      <h3 className="text-xl font-bold text-foreground mb-2 group-hover:drop-shadow-[0_1px_3px_rgba(234,179,8,0.4)] transition-all">
                         {exp.title}
                       </h3>
-                      <p className="text-lg font-semibold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-3">
+                      <p className="text-lg font-semibold bg-gradient-to-r from-yellow-500 to-amber-400 bg-clip-text text-transparent mb-3">
                         {exp.company}
                       </p>
                     </div>
@@ -199,7 +200,7 @@ export function ExperienceSection() {
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.3, delay: i * 0.05 }}
                         viewport={{ once: true }}
-                        className="px-3 py-1 bg-muted text-muted-foreground rounded-full text-xs font-medium hover:bg-primary/20 hover:text-primary transition-colors hover:scale-105"
+                        className="px-3 py-1 bg-muted text-muted-foreground rounded-full text-xs font-medium hover:bg-yellow-700/20 hover:text-yellow-400 transition-colors hover:scale-105"
                       >
                         {tech}
                       </motion.span>
@@ -232,7 +233,7 @@ export function ExperienceSection() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg font-medium hover:shadow-lg transition-all duration-300"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 text-white rounded-lg font-medium hover:shadow-lg transition-all duration-300"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <ExternalLink className="w-4 h-4" />

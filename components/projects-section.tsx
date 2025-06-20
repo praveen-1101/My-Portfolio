@@ -124,10 +124,10 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-yellow-600 to-amber-500 bg-clip-text text-transparent">
             Featured Projects
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-8 rounded-full" />
+          <div className="w-20 h-1 bg-gradient-to-r from-yellow-600 to-lime-400 mx-auto mb-8 rounded-full" />
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             A showcase of full-stack applications demonstrating scalable architecture and innovative solutions
           </p>
@@ -155,7 +155,7 @@ export function ProjectsSection() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                       
                       {project.featured && (
-                        <Badge className="absolute top-4 left-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white border-0">
+                        <Badge className="absolute top-4 left-4 bg-gradient-to-r from-yellow-600 to-lime-400 text-white border-0">
                           Featured
                         </Badge>
                       )}
