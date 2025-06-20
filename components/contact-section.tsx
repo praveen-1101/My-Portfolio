@@ -111,10 +111,10 @@ export function ContactSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-yellow-600 to-amber-400 bg-clip-text text-transparent">
             Let's Connect
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-8 rounded-full" />
+          <div className="w-20 h-1 bg-gradient-to-r from-yellow-600 via-amber-400 to-yellow-600 mx-auto mb-8 rounded-full" />
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Ready to collaborate on your next project or discuss opportunities? 
             I'd love to hear from you!

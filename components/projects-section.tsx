@@ -23,7 +23,6 @@ const projects = [
     image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
     featured: true,
     stats: {
-      users: "500+",
       performance: "30% faster",
       accuracy: "95%"
     }
@@ -44,8 +43,8 @@ const projects = [
     image: "https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?auto=compress&cs=tinysrgb&w=800",
     featured: true,
     stats: {
-      routes: "10K+",
-      cities: "100+",
+      routes: "~10K",
+      cities: "~10",
       accuracy: "92%"
     }
   },
@@ -178,7 +177,7 @@ export function ProjectsSection() {
                   <div className={`p-6 lg:p-8 ${project.featured ? 'lg:col-span-1' : 'lg:col-span-2'}`}>
                     <div className="space-y-6">
                       <div>
-                        <h3 className="text-2xl font-bold text-foreground mb-3 group-hover:text-blue-600 transition-colors">
+                        <h3 className="text-2xl font-bold text-foreground mb-3 group-hover:text-yellow-600 transition-colors">
                           {project.title}
                         </h3>
                         <p className="text-muted-foreground text-base leading-relaxed mb-4">
@@ -195,7 +194,7 @@ export function ProjectsSection() {
                         <ul className="space-y-2">
                           {project.features.map((feature, i) => (
                             <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                              <div className="w-1.5 h-1.5 rounded-full bg-blue-600 mt-2 flex-shrink-0" />
+                              <div className="w-1.5 h-1.5 rounded-full bg-yellow-600 mt-2 flex-shrink-0" />
                               <span>{feature}</span>
                             </li>
                           ))}

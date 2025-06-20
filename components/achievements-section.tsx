@@ -53,9 +53,9 @@ const achievements = [
     description: "Multiple professional certifications",
     details: "Frontend, JavaScript, React, Version Control",
     icon: Award,
-    color: "text-blue-600",
-    bgColor: "bg-blue-100 dark:bg-blue-900/20",
-    gradientColor: "from-blue-600 to-cyan-600",
+    color: "text-yellow-600",
+    bgColor: "bg-yellow-100 dark:bg-yellow-900/20",
+    gradientColor: "from-yellow-600 to-amber-600",
     stats: {
       certs: "4+",
       platform: "Coursera",
@@ -123,10 +123,10 @@ export function AchievementsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-yellow-400 bg-clip-text text-transparent">
             Achievements & Recognition
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-8 rounded-full" />
+          <div className="w-20 h-1 bg-gradient-to-r from-yellow-600 to-amber-600 mx-auto mb-8 rounded-full" />
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Competitive programming achievements, performance improvements, and professional certifications
           </p>
@@ -154,7 +154,12 @@ export function AchievementsSection() {
                       <IconComponent className="w-8 h-8 text-white" />
                     </div>
                     
-                    <h3 className="font-bold text-foreground mb-2 group-hover:text-blue-600 transition-colors text-lg">
+                    <h3 className="font-bold text-foreground mb-2 text-lg transition-colors 
+               group-hover:text-transparent 
+               group-hover:bg-gradient-to-r 
+               group-hover:from-yellow-400 
+               group-hover:to-white 
+               group-hover:bg-clip-text">
                       {achievement.title}
                     </h3>
                     
@@ -194,11 +199,11 @@ export function AchievementsSection() {
         >
           <Card className="p-8 border-border/50 bg-card/80 backdrop-blur-sm relative overflow-hidden group hover:shadow-2xl transition-all duration-500">
             {/* Background gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-cyan-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/5 to-amber-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             
             <div className="relative z-10">
               <div className="text-center mb-8">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
+                <div className="w-16 h-16 bg-gradient-to-r from-yellow-600 to-amber-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
                   <Trophy className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-2">Professional Certifications</h3>
@@ -215,9 +220,9 @@ export function AchievementsSection() {
                     viewport={{ once: true }}
                     className="flex items-center gap-3 p-4 rounded-xl bg-muted/30 hover:bg-muted/50 transition-all duration-300 group/item hover:-translate-y-1"
                   >
-                    <div className="w-3 h-3 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full flex-shrink-0 group-hover/item:scale-125 transition-transform" />
+                    <div className="w-3 h-3 bg-gradient-to-r from-yellow-500 to-amber-400 rounded-full flex-shrink-0 group-hover/item:scale-125 transition-transform" />
                     <span className="text-foreground font-medium flex-1">{cert}</span>
-                    <Badge variant="outline" className="text-xs bg-white/50 dark:bg-slate-800/50 border-blue-200 dark:border-blue-800">
+                    <Badge variant="outline" className="text-xs bg-white/50 dark:bg-slate-800/50 border-yellow-200 dark:border-yellow-800">
                       Coursera
                     </Badge>
                   </motion.div>
