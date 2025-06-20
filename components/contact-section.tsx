@@ -11,18 +11,18 @@ import { useState } from "react"
 const socialLinks = [
   {
     name: "GitHub",
-    url: "https://github.com/praveenkumar",
+    url: "https://github.com/praveen-1101",
     icon: Github,
     description: "View my code repositories and contributions",
     color: "from-gray-600 to-gray-800"
   },
   {
     name: "LinkedIn", 
-    url: "https://linkedin.com/in/praveenkumar",
+    url: "https://www.linkedin.com/in/praveen-kumar-031473270/",
     icon: Linkedin,
     description: "Connect with me professionally",
     color: "from-blue-600 to-blue-800"
-  },
+  }/* ,
   {
     name: "LeetCode",
     url: "https://leetcode.com/praveenkumar",
@@ -36,7 +36,7 @@ const socialLinks = [
     icon: ExternalLink,
     description: "View my competitive programming profile",
     color: "from-yellow-600 to-orange-600"
-  }
+  } */
 ]
 
 export function ContactSection() {
