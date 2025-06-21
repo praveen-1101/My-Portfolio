@@ -126,12 +126,7 @@ export function ExperienceSection() {
                           <Briefcase className="w-6 h-6 text-white" />
                         </div>
                         <div>
-                          {exp.current && (
-                            <Badge className="bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300 mb-2">
-                              Current Position
-                            </Badge>
-                          )}
-                          <Badge variant="secondary" className="text-xs">
+                          <Badge variant="secondary" className="bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300 mb-2">
                             {exp.type}
                           </Badge>
                         </div>

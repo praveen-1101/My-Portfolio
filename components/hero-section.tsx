@@ -39,7 +39,7 @@ export function HeroSection() {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Diamond Overlay is handled globally. Add a subtle dark background. */}
-      <div className="absolute inset-0 bg-black/95" />
+      <div className="absolute inset-0 bg-white dark:bg-black/95 transition-colors duration-500" />
       
       {/* Remove all blue/cyan shapes for a clean look. */}
       <motion.div 
@@ -49,7 +49,7 @@ export function HeroSection() {
         animate="visible"
       >
         <motion.div variants={itemVariants} className="mb-8">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 bg-gradient-to-br from-myellow via-white to-myellow bg-clip-text text-transparent drop-shadow-[0_4px_32px_rgba(255,255,200,0.7)]">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 bg-gradient-to-br from-myellow via-black to-myellow dark:from-myellow dark:via-white dark:to-myellow bg-clip-text text-transparent drop-shadow-[0_4px_32px_rgba(255,255,200,0.7)]">
             Praveen Kumar
           </h1>
         </motion.div>
@@ -65,7 +65,7 @@ export function HeroSection() {
 
         <motion.p 
           variants={itemVariants}
-          className="text-lg md:text-xl text-black dark:text-white max-w-3xl mx-auto mb-12 leading-relaxed"
+          className="text-lg md:text-xl text-black dark:text-white/90 max-w-3xl mx-auto mb-12 leading-relaxed transition-colors duration-500"
         >
           I am a Computer Science undergrad skilled in creating scalable full-stack web apps 
           with seamless UX and efficient backend logic.
