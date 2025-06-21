@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Trophy, Target, Award, Code, Star, TrendingUp } from "lucide-react"
+import { Trophy, Award, Code, Star, } from "lucide-react"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
@@ -133,7 +133,7 @@ export function AchievementsSection() {
         </motion.div>
 
         {/* Achievement Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {achievements.map((achievement, index) => {
             const IconComponent = achievement.icon
             
@@ -210,7 +210,7 @@ export function AchievementsSection() {
                 <p className="text-muted-foreground">Continuous learning and skill development through industry-recognized programs</p>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 gap-6">
                 {certifications.map((cert, index) => (
                   <motion.div
                     key={cert}

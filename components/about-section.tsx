@@ -21,8 +21,7 @@ const skillIcons = {
 const interests = [
   { icon: BookOpen, title: "Continuous Learning", desc: "Always exploring new technologies" },
   { icon: Target, title: "Problem Solving", desc: "Love tackling complex challenges" },
-  { icon: Coffee, title: "Code & Coffee", desc: "Best combination for productivity" },
-  { icon: Lightbulb, title: "Innovation", desc: "Building solutions that matter" }
+  { icon: Coffee, title: "Code & Coffee", desc: "Best combination for productivity" }
 ]
 
 export function AboutSection() {
@@ -114,10 +113,10 @@ export function AboutSection() {
                   What Drives Me
                 </h3>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  My development philosophy centers around writing clean, scalable code that not only 
-                  functions flawlessly but also provides exceptional user experiences. I believe in 
-                  the power of technology to transform ideas into reality, and I'm committed to 
-                  building applications that make a meaningful impact.
+                I try to write clean and easy-to-understand code that works well
+                and gives a good experience to users. I believe technology can turn
+                ideas into real projects, and I enjoy building apps that are useful
+                and make a difference. Also, exploring how different tools and frameworks work.
                 </p>
               </div>
               
@@ -129,10 +128,10 @@ export function AboutSection() {
                   Beyond Coding
                 </h3>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  When I'm not immersed in code, you'll find me tackling algorithmic challenges on 
-                  competitive programming platforms, contributing to open-source projects, or exploring 
-                  the latest web technologies. I'm also passionate about mentoring fellow developers 
-                  and sharing knowledge through technical blogs and community contributions.
+                When I’m not coding, I enjoy solving algorithm problems on competitive programming sites
+                and learning about new web technologies. I also like building small side projects to apply
+                what I’ve learned. Sometimes, I also
+                participate in coding contests to challenge myself and improve my skills.
                 </p>
               </div>
 
@@ -208,7 +207,7 @@ export function AboutSection() {
           className="mt-16"
         >
           <h3 className="text-2xl font-bold text-center text-foreground mb-8">What I'm Passionate About</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {interests.map((interest, index) => {
               const IconComponent = interest.icon
               return (
