@@ -49,7 +49,7 @@ export function HeroSection() {
         animate="visible"
       >
         <motion.div variants={itemVariants} className="mb-8">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 bg-gradient-to-br from-myellow via-black to-myellow dark:from-myellow dark:via-white dark:to-myellow bg-clip-text text-transparent drop-shadow-[0_4px_32px_rgba(255,255,200,0.7)]">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 bg-gradient-to-br from-myellow via-orange-400 to-myellow-600 dark:from-myellow dark:via-white dark:to-myellow bg-clip-text text-transparent drop-shadow-[0_4px_32px_rgba(255,255,200,0.7)]">
             Praveen Kumar
           </h1>
         </motion.div>
@@ -59,7 +59,7 @@ export function HeroSection() {
             words={[
               "Full-Stack Developer | React Specialist | UI/UX Enthusiast"
             ]}
-            className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white drop-shadow-[0_2px_8px_rgba(255,255,200,0.3)]"
+            className="text-2xl md:text-3xl lg:text-4xl font-semibold text-yellow-500 dark:text-white drop-shadow-[0_2px_8px_rgba(255,255,200,0.3)]"
           />
         </motion.div>
 
