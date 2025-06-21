@@ -89,7 +89,7 @@ export function HeroSection() {
             <span className="absolute inset-0 rounded-2xl bg-myellow blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500 -z-10" />
           </Button>
           
-          <Button 
+         {/*  <Button 
             variant="outline" 
             size="lg"
             className="group relative overflow-hidden border-2 border-myellow/60 bg-white/80 dark:bg-black/80 backdrop-blur-sm px-10 py-7 text-lg font-semibold hover:bg-myellow/10 transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-myellow/10 rounded-2xl hover:border-myellow"
@@ -99,7 +99,7 @@ export function HeroSection() {
               <Download className="w-5 h-5 group-hover:translate-y-2 transition-transform duration-300" />
               Download Resume
             </span>
-          </Button>
+          </Button> */}
           
           <Button 
             variant="outline" 
