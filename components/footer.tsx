@@ -36,7 +36,7 @@ export function Footer() {
 
           {/* Main footer content */}
           <div className="space-y-4">
-            <motion.p 
+   {/*          <motion.p 
               className="text-muted-foreground flex items-center justify-center gap-2 text-lg"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -56,7 +56,7 @@ export function Footer() {
                 <Heart className="w-5 h-5 text-red-500 fill-current" />
               </motion.span>
               using Next.js, TypeScript & Tailwind CSS
-            </motion.p>
+            </motion.p> */}
 
             <p className="text-sm text-muted-foreground">
               © {currentYear} Bora Sai Venkata Praveen Kumar. All rights reserved.
@@ -64,9 +64,9 @@ export function Footer() {
           </div>
 
           {/* Theme toggle */}
-          <div className="flex justify-center pt-4">
+         {/*  <div className="flex justify-center pt-4">
             <ThemeToggle />
-          </div>
+          </div> */}
 
           {/* Decorative line */}
           <div className="max-w-xs mx-auto">
