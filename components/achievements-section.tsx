@@ -17,12 +17,12 @@ const achievements = [
     stats: {
       problems: "500+",
       rating: "1743",
-      rank: "Top 15%"
+      rank: "Top 12%"
     }
   },
   {
     title: "CodeChef Expert",
-    description: "Maintained consistent 3⭐ rating",
+    description: "Maintaining consistent 3⭐ rating",
     details: "Current rating: 1634",
     icon: Star,
     color: "text-yellow-600",
@@ -33,7 +33,7 @@ const achievements = [
       rating: "1634",
       stars: "3⭐"
     }
-  },
+  }/* ,
   {
     title: "Performance Optimizer",
     description: "Improved application performance significantly",
@@ -47,7 +47,7 @@ const achievements = [
       metric: "Speed",
       impact: "High"
     }
-  },
+  } */,
   {
     title: "Certified Developer",
     description: "Multiple professional certifications",
@@ -65,8 +65,8 @@ const achievements = [
 ]
 
 const certifications = [
-  "Frontend Development Specialization",
-  "JavaScript Algorithms and Data Structures",
+  "Frontend Development",
+  "JavaScript",
   "React.js Development",
   "Version Control with Git"
 ]
